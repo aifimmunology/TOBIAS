@@ -86,6 +86,7 @@ def main():
 										 ______________________________________________________________________________
 										|                                                                              |
 										|                                ~ T O B I A S ~                               |
+										|                             ~ modified for AIFI ~                            |
 										|                   Transcription factor Occupancy prediction                  |
 										|                       By Investigation of ATAC-seq Signal                    |
 										|______________________________________________________________________________|

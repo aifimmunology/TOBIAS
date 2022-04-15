@@ -384,7 +384,7 @@ def run_tracks(args):
 
 			#Draw to pdf
 			sv4g.manager.Image(tracks, pa).draw()
-			sv4g.methods.pdf_page_to_png(pa)	#pdf to png
+			# sv4g.methods.pdf_page_to_png(pa)	#pdf to png
 			output_plots.append(pa.config["output_filename"])
 
 	#Done plotting all regions; join to one pdf
