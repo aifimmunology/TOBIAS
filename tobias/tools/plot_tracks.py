@@ -184,6 +184,7 @@ def run_tracks(args):
 	args.sites = emptyfile if args.sites is None else args.sites
 	args.highlight = emptyfile if args.highlight is None else args.highlight
 	args.gtf = emptyfile if args.gtf is None else args.gtf
+    args.plot_title = "" if args.plot_title is None else args.plot_title
 
 	#Overwrite config with commandline parameters
 	c["c_bedgraph_tracks"] = args.colors if args.colors is not None else c["c_bedgraph_tracks"]
@@ -298,7 +299,7 @@ def run_tracks(args):
 			pa.config['genomic_intervals'] = [["{0}-{1}".format(site[1], site[2])] for site in sites_in_region]
 			pa.config['genomic_intervals_label'] = [site[3] for site in sites_in_region]
 			pa.config['highlight_frame'] = [[highlight[1], highlight[2], ""] for highlight in highlight_in_region]
-			pa.config['image_title'] = ""
+			pa.config['image_title'] = args.plot_title
 
 			pa.config['bedgraph_upper_limit'] = [group_max[bigwigs[bw]["group"]] for bw in bigwig_names]
 			pa.config['bedgraph_lower_limit'] = [group_min[bigwigs[bw]["group"]] for bw in bigwig_names]
