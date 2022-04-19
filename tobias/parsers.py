@@ -352,7 +352,7 @@ def add_tracks_arguments(parser):
 	IO.add_argument('--colors', metavar="", nargs="*", help="List of specific colors to use for plotting tracks", default=None)
 	IO.add_argument('--labels', metavar="", nargs="*", help="Labels for tracks (default: prefix of bigwig)")
 	IO.add_argument('--max-transcripts', metavar="", type=int, help="Set a limit on number of transcripts per gene shown in plot (default: 1)", default=1)
-    IO.add_argument('--plot-title', metavar="", help="Title of plot (optional)")
+	IO.add_argument('--plot-title', metavar="", help="Title of plot (optional)")
 	IO.add_argument('--outdir', metavar="", help="Output folder (default: plottracks_output)", default="plottracks_output")
 	IO = add_logger_args(IO)
 	

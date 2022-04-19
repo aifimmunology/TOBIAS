@@ -184,7 +184,7 @@ def run_tracks(args):
 	args.sites = emptyfile if args.sites is None else args.sites
 	args.highlight = emptyfile if args.highlight is None else args.highlight
 	args.gtf = emptyfile if args.gtf is None else args.gtf
-    args.plot_title = "" if args.plot_title is None else args.plot_title
+	args.plot_title = "" if args.plot_title is None else args.plot_title
 
 	#Overwrite config with commandline parameters
 	c["c_bedgraph_tracks"] = args.colors if args.colors is not None else c["c_bedgraph_tracks"]
