@@ -39,7 +39,7 @@ def svist4get_defaults():
 	c["png_dpi"] = 600
 	c["revcomp_transform"] = 0
 	c["hide_introns"] = 0
-	c["show_title"] = 1
+	c["show_title"] = 0
 	c["font_size_title"] = 7.5
 	c["show_aa_seq_track"] = 1
 	c["show_genomic_axis"] = 1
